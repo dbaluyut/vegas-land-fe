@@ -40,6 +40,5 @@
   },
   "engines": {
     "node": "14.x"
-  },
-  "proxy": "https://rocky-castle-64423.herokuapp.com/"
+  }
 }
