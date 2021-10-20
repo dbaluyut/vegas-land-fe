@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem; /* To define the gap between rows/columns */
+  /* gap: 0.75rem; */
+  padding: 0.75rem;
+
+  color: #fff;
+  padding-top: 8rem;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+/* .card {
+  
+  position: relative;
+
+} */
+
+.modalContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.modal {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  /* position: absolute; */
+  width: 65%;
+  min-height: 70vh;
+  z-index: 1;
+  /* -webkit-backdrop-filter: blur(5px); */
+  /* backdrop-filter: blur(5px); */
+  font-size: 34px;
+  margin: auto;
+  /* border-radius: 0.75rem; */
+  border-radius: 3px;
+  position: fixed;
+  /* color: white; */
+  border: none;
+  background: #fff;
+  color: #2b2929;
+  /* padding: 30px; */
+  /* box-shadow: 5px 5px 5px  rgba(50, 50, 50, 0.75); */
+  -webkit-box-shadow: 0 0 10px black;
+        box-shadow: 0 0 10px black;
+}
+
+.modalLabelContainer {
+  height: 15vh;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(50%);
+  /* position: relative; */
+}
+
+/* .modalLabelContainer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all .2s linear;
+} */
+
+.modal button {
+  /* padding: 10px; */
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 31px;
+  color: white;
+  text-shadow: 0 0 10px #000;
+  z-index: 2;
+  /* border: solid 1px black; */
+}
+
+.modalContent {
+  padding: 1rem;
+}
+
+.modalDesc {
+  font-size: 22px;
+  padding: 20px 0 0 0;
+}
+.modalLink {
+  font-size: 18px;
+  text-align: left;
+  padding: 0;
+  text-decoration: none;
+  color: lightslategrey;
+}
+.modal a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.address {
+  font-size: 18px;
+  margin: 20px 0px;
+}
+.modalLabel {
+  /* border-bottom: 1px solid #ddd; */
+  text-align: center;
+  /* padding: 20px; */
+  margin: 0 10%;
+  color: white;
+  text-shadow: 0 0 10px #000;
+  position: absolute;
+  left: 0;
+  top: 5%;
+}
+
+.readMore{
+  font-size: 18px;
+}
+

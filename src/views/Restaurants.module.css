@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Life+Savers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fullContainer {
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.contentContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 20%;
+  overflow: scroll;
+  cursor: pointer;
+  padding-top: 13vh;
+}
+
+.sidebarItem {
+  /* width: 90%;
+  height: 10vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: solid 3px rgb(185, 182, 182);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  text-decoration: none; */
+  color: #3b8979;
+  padding-top: 0.87rem;
+  padding-bottom: 0.87rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebarItemTitle {
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  padding-left: 10px;
+  font-family: "Life Savers", cursive;
+  font-weight: 600;
+}
+
+.sidebar li {
+  transition: all 0.4s linear;
+  /* text-decoration: none; */
+  backdrop-filter: brightness(1);
+  font-size: 20px;
+}
+
+.contentContainer ul:hover li:not(:hover) {
+  backdrop-filter: brightness(0.5);
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  width: 80%;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.imageTitle {
+  font-family: Smythe;
+  font-size: 68px;
+  text-shadow: 0 0 10px #000;
+}
+
+.section2 {
+  position: relative;
+  color: black;
+  /* border: solid 5px black; */
+}
+
+.descContainer {
+  line-height: 2;
+  background-color: #75a99a;
+  color: white;
+  padding: 5%;
+  text-align: justify;
+  width: 100%;
+}
+
+.descContainer p {
+  font-weight: 300;
+}
+
+.descContainer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.descContainer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.itemDesc {
+  margin-top: 2rem;
+}
+
+.labelsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3%;
+}
+
+.labels {
+  display: flex;
+  padding-right: 1.1rem;
+}
+
+/* .addressLinkContainer {
+  height: 100px;
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.address {
+  width: 100%;
+  height: 50%;
+  border: solid 1px black
+}
+
+.link {
+  width: 100%;
+  height: 50%;
+  border: solid 1px black;
+} */
+
+/* .parallax::after {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+} */
+
+.parallax {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The styling for the static div. */
+/* .static {
+  background-image: url("https://i.pinimg.com/originals/0a/59/17/0a5917be17d3602f6aa078bd02381972.jpg");
+} */
+
+/* Sets the actual background images */
+/* .bg1::after {
+  background-image: url("https://i.pinimg.com/originals/61/e7/8b/61e78b08a8dd18779132812218a9f2a8.jpg");
+  background-size: cover;
+} */
+
+/* .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: inline-block;
+} */
+
+.labels img {
+  width: 35px;
+  margin-right: 0.25rem;
+}
