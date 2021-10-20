@@ -1,10 +1,10 @@
-import React, { useEffect } from "react"
-import { useParams } from "react-router-dom"
-import { Navbar } from "../ui/Navbar"
-import { Footer } from "../ui/Footer"
-import styles from "./Restaurants.module.css"
-import { selectRestaurants, getRestaurants } from "./restaurantsSlice"
-import { useSelector, useDispatch } from "react-redux"
+import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { Navbar } from '../ui/Navbar'
+import { Footer } from '../ui/Footer'
+import styles from './Restaurants.module.css'
+import { selectRestaurants, getRestaurants } from './restaurantsSlice'
+import { useSelector, useDispatch } from 'react-redux'
 
 export default function Restaurants() {
   const restaurants = useSelector(selectRestaurants)
@@ -21,7 +21,7 @@ export default function Restaurants() {
   function scrollTo(id) {
     console.log(refs[id].current)
     refs[id].current?.scrollIntoView({
-      behavior: "smooth",
+      behavior: 'smooth',
     })
   }
 
@@ -47,10 +47,10 @@ export default function Restaurants() {
       <div className={styles.contentContainer}>
         <ul
           style={{
-            backgroundImage: `url(${"./assets/assets-04.png"})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            backgroundImage: `url(${'./assets/assets-04.png'})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
           }}
           className={styles.sidebar}
         >
@@ -70,7 +70,7 @@ export default function Restaurants() {
                 className={`${styles.section} ${styles.parallax} ${styles.bg1}`}
                 style={{
                   backgroundImage: `url(${item.image})`,
-                  backgroundPosition: "center",
+                  backgroundPosition: 'center',
                 }}
               >
                 <h1 className={styles.imageTitle}>{item.title}</h1>
@@ -108,9 +108,7 @@ export default function Restaurants() {
           ))}
         </main>
       </div>
-      <div className={styles.footer}>
-        <Footer />
-      </div>
+      <div className={styles.footer}>{/* <Footer /> */}</div>
     </div>
   )
 }

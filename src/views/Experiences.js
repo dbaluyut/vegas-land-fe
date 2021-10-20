@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
-import styles from "./Experiences.module.css"
-import { Navbar } from "../ui/Navbar"
-import { Footer } from "../ui/Footer"
-import { Card } from "../ui/Card"
-import { selectExperiences, getExperiences } from "./experiencesSlice"
-import { useSelector, useDispatch } from "react-redux"
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import styles from './Experiences.module.css'
+import { Navbar } from '../ui/Navbar'
+import { Footer } from '../ui/Footer'
+import { Card } from '../ui/Card'
+import { selectExperiences, getExperiences } from './experiencesSlice'
+import { useSelector, useDispatch } from 'react-redux'
 
 export default function Experiences() {
   const experiences = useSelector(selectExperiences)
@@ -28,10 +28,8 @@ export default function Experiences() {
     <div>
       <div className={styles.header}>
         <Navbar />
-        
       </div>
-      
-      {activeItem ? (
+      {activeItem && (
         <div className={styles.modalContainer}>
           <div className={styles.modal}>
             <button
@@ -43,7 +41,7 @@ export default function Experiences() {
             <div
               style={{
                 backgroundImage: `url(${activeItem.image})`,
-                backgroundPosition: "center",
+                backgroundPosition: 'center',
               }}
               className={styles.modalLabelContainer}
             ></div>
@@ -61,27 +59,25 @@ export default function Experiences() {
             </div>
           </div>
         </div>
-      ) : null}
-
-      <div className={styles.container}>
-      
-        {experiences.map((item) => (
-          <Card
-            backgroundImage={item.image}
-            test={() => setActiveItem(item)}
-            title={item.title}
-          />
-
-          // <div className={styles.card} onClick={() => setActiveItem(item)}>
-          //   <div className={styles.content}>
-          //     <div className={styles.center}>
-          //       <h3>{item.title}</h3>
-          //     </div>
-          //   </div>
-          // </div>
-        ))}
-      </div>
-      <Footer />
+      )}
+      {experiences[0] ? (
+        <>
+          <div className={styles.container}>
+            {experiences.map((item) => (
+              <Card
+                backgroundImage={item.image}
+                test={() => setActiveItem(item)}
+                title={item.title}
+              />
+            ))}
+          </div>
+          <Footer />
+        </>
+      ) : (
+        <h1 styles={{ margin: '0 auto', marginTop: '30rem', color: 'black' }}>
+          Loading...
+        </h1>
+      )}
     </div>
   )
 }

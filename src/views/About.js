@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import { Navbar } from "../ui/Navbar";
-import { Footer } from "../ui/Footer";
-import styles from "./About.module.css";
+import { Navbar } from '../ui/Navbar'
+import { Footer } from '../ui/Footer'
+import styles from './About.module.css'
 
 export default function About() {
   return (
@@ -12,7 +12,7 @@ export default function About() {
       <div className={styles.aboutContainer}>
         <div className={styles.section1}>
           <div className={styles.discription}>
-            <p className={styles.name}>Name</p>
+            <p className={styles.name}>Bereket Girma</p>
             <p className={styles.title}>Web Developer</p>
             <p className={styles.bio}>
               Bereket Girma is a Web Developer based in Las Vegas. She's built
@@ -30,17 +30,17 @@ export default function About() {
             </p>
 
             <section className={styles.aboutIcons}>
-              <a href="#">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <a href='#'>
+                <i class='fa fa-linkedin-square' aria-hidden='true'></i>
               </a>
 
-              <a href="#">
-                <i class="fa fa-github-square" aria-hidden="true"></i>
+              <a href='#'>
+                <i class='fa fa-github-square' aria-hidden='true'></i>
               </a>
             </section>
           </div>
           <div className={styles.imageContainer}>
-            <img className={styles.profileImage} src="./assets/photo1-01.png" />
+            <img className={styles.profileImage} src='./assets/photo1-01.png' />
           </div>
         </div>
 
@@ -48,7 +48,7 @@ export default function About() {
           <div className={styles.imageContainer2}>
             <img
               className={styles.profileImage2}
-              src="./assets/will-photo.png"
+              src='./assets/will-photo.png'
             />
           </div>
           <div className={styles.discription}>
@@ -66,18 +66,18 @@ export default function About() {
             </p>
 
             <section className={styles.aboutIcons}>
-              <a href="#">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <a href='#'>
+                <i class='fa fa-linkedin-square' aria-hidden='true'></i>
               </a>
 
-              <a href="#">
-                <i class="fa fa-github-square" aria-hidden="true"></i>
+              <a href='#'>
+                <i class='fa fa-github-square' aria-hidden='true'></i>
               </a>
             </section>
           </div>
         </div>
 
-        <div className={styles.section3}>
+        <article className={styles.section3}>
           <div className={styles.discription}>
             <p className={styles.name}>Derrique Baluyut</p>
             <p className={styles.title}>Web Developer</p>
@@ -97,26 +97,26 @@ export default function About() {
 
             <section className={styles.aboutIcons}>
               <a
-                href="https://www.linkedin.com/in/derrique-baluyut-5ba14545/"
-                target="_blank"
+                href='https://www.linkedin.com/in/derrique-baluyut-5ba14545/'
+                target='_blank'
               >
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class='fa fa-linkedin-square' aria-hidden='true'></i>
               </a>
 
-              <a href="https://dbaluyut.github.io/" target="_blank">
-                <i class="fa fa-github-square" aria-hidden="true"></i>
+              <a href='https://dbaluyut.github.io/' target='_blank'>
+                <i class='fa fa-github-square' aria-hidden='true'></i>
               </a>
             </section>
           </div>
           <div className={styles.imageContainer}>
             <img
               className={styles.profileImage}
-              src="./assets/db-photo-01.png"
+              src='./assets/db-photo-01.png'
             />
           </div>
-        </div>
+        </article>
       </div>
       <Footer />
     </div>
-  );
+  )
 }

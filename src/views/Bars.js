@@ -1,10 +1,10 @@
-import React, { useEffect } from "react"
-import { useParams } from "react-router-dom"
-import { Navbar } from "../ui/Navbar"
-import { Footer } from "../ui/Footer"
-import styles from "./Restaurants.module.css"
-import { selectBars, getBars, getBarImages } from "./barsSlice"
-import { useSelector, useDispatch } from "react-redux"
+import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { Navbar } from '../ui/Navbar'
+import { Footer } from '../ui/Footer'
+import styles from './Restaurants.module.css'
+import { selectBars, getBars, getBarImages } from './barsSlice'
+import { useSelector, useDispatch } from 'react-redux'
 
 export default function Bars() {
   const bars = useSelector(selectBars)
@@ -20,7 +20,7 @@ export default function Bars() {
   function scrollTo(id) {
     console.log(refs[id].current)
     refs[id].current?.scrollIntoView({
-      behavior: "smooth",
+      behavior: 'smooth',
     })
   }
 
@@ -47,10 +47,10 @@ export default function Bars() {
       <div className={styles.contentContainer}>
         <ul
           style={{
-            backgroundImage: `url(${"./assets/assets-04.png"})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            backgroundImage: `url(${'./assets/assets-04.png'})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
           }}
           className={styles.sidebar}
         >
@@ -101,9 +101,7 @@ export default function Bars() {
           ))}
         </main>
       </div>
-      <div className={styles.footer}>
-        <Footer />
-      </div>
+      <div className={styles.footer}>{/* <Footer /> */}</div>
     </div>
   )
 }

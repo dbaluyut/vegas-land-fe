@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Itim&family=Life+Savers&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Life+Savers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
 
 * {
   margin: 0;
@@ -22,6 +22,8 @@
 .contentContainer {
   display: flex;
   height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .sidebar {
@@ -55,7 +57,7 @@
   width: 100%;
   /* justify-content: center; */
   padding-left: 10px;
-  font-family: "Life Savers", cursive;
+  font-family: 'Life Savers', cursive;
   font-weight: 600;
 }
 

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Itim&family=Life+Savers&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Life+Savers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
 
 * {
   margin: 0;
@@ -22,6 +22,7 @@
 .contentContainer {
   display: flex;
   min-height: 100vh;
+  max-width: 1440px;
 }
 
 .sidebar {
@@ -55,7 +56,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  font-family: "Life Savers", cursive;
+  font-family: 'Life Savers', cursive;
   font-weight: 600;
   overflow: hidden;
   white-space: nowrap;
@@ -152,7 +153,7 @@
 
 .parallax::after {
   /* Display and position the pseudo-element */
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -165,7 +166,7 @@
 
 /* The styling for the static div. */
 .static {
-  background-image: url("https://i.pinimg.com/originals/0a/59/17/0a5917be17d3602f6aa078bd02381972.jpg");
+  background-image: url('https://i.pinimg.com/originals/0a/59/17/0a5917be17d3602f6aa078bd02381972.jpg');
 }
 
 /* Sets the actual background images */

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Itim&family=Life+Savers&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Life+Savers&display=swap');
 
 * {
   margin: 0px;
@@ -18,7 +18,7 @@ nav {
 }
 .navWrapper {
   height: 6rem;
-  box-shadow: 0px 1px 15px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px 1px 15px 0px rgba(50, 50, 50, 0.7);
   display: flex;
   align-items: flex-end;
   position: sticky;
@@ -84,7 +84,7 @@ ul li ul li {
 .nav_links span {
   font-size: 28px;
   font-weight: 600;
-  font-family: "Life Savers", cursive;
+  font-family: 'Life Savers', cursive;
   color: white;
   letter-spacing: 1px;
 }
