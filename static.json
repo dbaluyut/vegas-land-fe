@@ -5,7 +5,7 @@
   },
   "proxies": {
     "/api/": {
-      "origin": "https://rocky-castle-64423.herokuapp.com"
+      "origin": "https://rocky-castle-64423.herokuapp.com/api"
     }
   }
 }
