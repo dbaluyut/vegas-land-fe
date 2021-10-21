@@ -1,8 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit"
-import axios from "axios"
+import { createSlice } from '@reduxjs/toolkit'
+import axios from 'axios'
 
 export const happyHrListSlice = createSlice({
-  name: "hhlist",
+  name: 'hhlist',
   initialState: {
     hhlist: [],
   },
@@ -20,7 +20,7 @@ export const { setHappyHrList } = happyHrListSlice.actions
 // will call the thunk with the `dispatch` function as the first argument. Async
 // code can then be executed and other actions can be dispatched
 export const getHappyHrList = () => (dispatch) => {
-  axios.get("/api/happy_hr").then((r) => dispatch(setHappyHrList(r.data)))
+  axios.get('/api/happy_hr').then((r) => dispatch(setHappyHrList(r.data)))
 }
 
 // The function below is called a selector and allows us to select a value from
